@@ -1,0 +1,21 @@
+$ git init    #깃 초기화
+$ git remote add origin https://github.com/계정명/리포지토리명    #원격 저장소 연결
+$ git pull origin master 
+
+$ git lfs install         #lfs 초기화
+
+$ git lfs track “*.zip”   #lfs를 사용해 업로드할 파일 타입 추가
+$ git lfs track “*.psd”   
+$ git lfs track “*.pdf”
+$ git lfs track “*.tgr”
+$ git lfs track “*.tiff”
+$ git lfs track “*.cubemap”
+
+$ git add .gitattributes  #LFS 정보를 스테이지에 추가
+
+$ git commit -m “Add gitattributes”   #커밋
+$ git push -u origin master           #원격 저장소에 푸시
+
+$ git add .
+$ git commit -m “Project Upload”
+$ git push
